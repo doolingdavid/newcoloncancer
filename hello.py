@@ -986,31 +986,20 @@ def results():
                                   session['hist_cystic'],
                                   session['hist_ductal'],
                                   session['hist_epithelial'],
-                                  session['hist_fibroepithelial'],
                                   session['hist_fibromatuos'],
                                   session['hist_germ'],
-                                  session['hist_gliomas'],
-                                  session['hist_granular'],
                                   session['hist_lipomatous'],
                                   session['hist_misc_bone'],
-                                  session['hist_misc_tumors'],
-                                  session['hist_mucoepidermoid'],
                                   session['hist_myomatous'],
-                                  session['hist_myxomatous'],
-                                  session['hist_nerve'],
                                   session['hist_neuroepitheliomatous'],
                                   session['hist_nevi'],
-                                  session['hist_osseous'],
                                   session['hist_paragangliomas'],
                                   session['hist_soft'],
                                   session['hist_squamous'],
                                   session['hist_synovial'],
-                                  session['hist_thymic'],
                                   session['hist_transitional'],
-                                  session['hist_trophoblastic'],
                                   session['hist_unspecified'],
                                   session['lat'],
-                                  session['laterality_bilateral'],
                                   session['laterality_left'],
                                   session['laterality_not'],
                                   session['laterality_only'],
@@ -1041,7 +1030,6 @@ def results():
                                   session['raceethnicity_asianindian'],
                                   session['raceethnicity_asianindianpakistani'],
                                   session['raceethnicity_black'],
-                                  session['raceethnicity_chamorran'],
                                   session['raceethnicity_chinese'],
                                   session['raceethnicity_fijiislander'],
                                   session['raceethnicity_filipino'],
@@ -1117,10 +1105,10 @@ def results():
 
         print prob6, prob12, prob60
 
-        session['prob6'] = prob6
-        session['prob12'] = prob12
-        session['prob60'] = prob60
-        session['Asurv'] = list(Asurv)
+        session['prob6'] = round(prob6,3)
+        session['prob12'] = round(prob12,3)
+        session['prob60'] = round(prob60,3)
+        session['Asurv'] = [round(elem,3) for elem in Asurv]
         return render_template('results.html',
                                prob6 = session.get('prob6'),
                                prob12 = session.get('prob12'),
