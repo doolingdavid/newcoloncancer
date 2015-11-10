@@ -461,10 +461,7 @@ def results():
         else:
             session['hist_epithelial'] = '0'
 
-        if form.hist.data == 'fibroepithelial':
-            session['hist_fibroepithelial'] = '1'
-        else:
-            session['hist_fibroepithelial'] = '0'
+                           
 
         if form.hist.data == 'fibromatuos':
             session['hist_fibromatuos'] = '1'
@@ -477,15 +474,8 @@ def results():
             session['hist_germ'] = '0'
 
 
-        if form.hist.data == 'gliomas':
-            session['hist_gliomas'] = '1'
-        else:
-            session['hist_gliomas'] = '0'
 
-        if form.hist.data == 'granular':
-            session['hist_granular'] = '1'
-        else:
-            session['hist_granular'] = '0'
+        
 
         if form.hist.data == 'lipomatous':
             session['hist_lipomatous'] = '1'
@@ -497,15 +487,9 @@ def results():
         else:
             session['hist_misc_bone'] = '0'
 
-        if form.hist.data == 'misc_tumors':
-            session['hist_misc_tumors'] = '1'
-        else:
-            session['hist_misc_tumors'] = '0'
+        
 
-        if form.hist.data == 'mucoepidermoid':
-            session['hist_mucoepidermoid'] = '1'
-        else:
-            session['hist_mucoepidermoid'] = '0'
+        
 
         if form.hist.data == 'myomatous':
             session['hist_myomatous'] = '1'
@@ -513,15 +497,9 @@ def results():
             session['hist_myomatous'] = '0'
 
 
-        if form.hist.data == 'myxomatous':
-            session['hist_myxomatous'] = '1'
-        else:
-            session['hist_myxomatous'] = '0'
+        
             
-        if form.hist.data == 'nerve':
-            session['hist_nerve'] = '1'
-        else:
-            session['hist_nerve'] = '0'
+        
 
         if form.hist.data == 'neuroepitheliomatous':
             session['hist_neuroepitheliomatous'] = '1'
@@ -534,10 +512,7 @@ def results():
             session['hist_nevi'] = '0'
 
 
-        if form.hist.data == 'osseous':
-            session['hist_osseous'] = '1'
-        else:
-            session['hist_osseous'] = '0'
+        
 
         if form.hist.data == 'paragangliomas':
             session['hist_paragangliomas'] = '1'
@@ -561,20 +536,14 @@ def results():
         else:
             session['hist_synovial'] = '0'
 
-        if form.hist.data == 'thymic':
-            session['hist_thymic'] = '1'
-        else:
-            session['hist_thymic'] = '0'
+        
 
         if form.hist.data == 'transitional':
             session['hist_transitional'] = '1'
         else:
             session['hist_transitional'] = '0'
 
-        if form.hist.data == 'trophoblastic':
-            session['hist_trophoblastic'] = '1'
-        else:
-            session['hist_trophoblastic'] = '0'
+        
 
 
         if form.hist.data == 'unspecified':
@@ -589,10 +558,7 @@ def results():
 
 
 
-        if form.laterality.data == 'bilateral':
-            session['laterality_bilateral'] = '1'
-        else:
-            session['laterality_bilateral'] = '0'
+        
 
 
         if form.laterality.data == 'left':
@@ -761,10 +727,7 @@ def results():
         else:
             session['raceethnicity_black'] = '0'
 
-        if form.raceethnicity.data == 'chamorran':
-            session['raceethnicity_chamorran'] = '1'
-        else:
-            session['raceethnicity_chamorran'] = '0'
+        
 
 
         if form.raceethnicity.data == 'chinese':
