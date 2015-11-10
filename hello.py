@@ -149,7 +149,6 @@ class NameForm(Form):
                    ('asianindian','Asian Indian'),
                    ('asianindianpakistani','Asian Indian or Pakistani'),
                    ('black','Black'),
-                   ('chamorran','Chamorran'),
                    ('chinese','Chinese'),
                    ('fijiislander','Fiji Islander'),
                    ('filipino','Filipino'),
