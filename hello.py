@@ -102,7 +102,7 @@ class NameForm(Form):
 
 
     laterality = SelectField('Laterality', default='0',
-        choices = [('bilateral','bilateral involvement, lateral origin unknown; stated to be single primary'),
+        choices = [
                    ('left','left: origin of primary'),
                    ('not','not a paired site'),
                    ('only','only one side involved, right or left origin unspecified'),
